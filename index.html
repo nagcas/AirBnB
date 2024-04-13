@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Description -->
+    <meta name="description" content="BuildWeek 2, AirBnB, Corso Epicode, Web Developer">
+    <!-- Keyword -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <!-- Author -->
+    <meta name="author" content="Gianluca Chiaravalloti, Mattia Petruzzi, Francesca Montini, Marina Greco">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/Airbnb_icon-icons.com_66791.png">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>AirBnB</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container-fluid bg-black fixed-top">
+        <div class="d-flex flex-nowrap justify-content-around align-items-center">
+            <!-- Logo -->
+            <div>
+                <a href="./index.html" class="text-decoration-none">
+                    <img src="./assets/logo.png" id="firstLogo" alt="logo AirBnB">
+                </a>
+            </div>
+            <div class="menu-header">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-white d-none d-sm-block">Places to stay</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white d-none d-sm-block">Experiences</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white d-none d-sm-block">Online Experiences</a></li>
+                </ul>
+            </div>
+            <div class="dropdown text-end d-flex justify-content-center align-items-center">
+                <a href="#" class="nav-link px-2 text-white" id="text-host">Become a host</a>
+                <div class="m-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+                        focusable="false" style="display: block; height: 20px; width: 20px; fill: #fff;">
+                        <path
+                            d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                        </path>
+                    </svg>
+                </div>
+                <!-- Menu Dropdown -->
+                <div class="menu">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Sign In</a></li>
+                        <li><a class="dropdown-item" href="#">Log In</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                        <li><a class="dropdown-item" href="#">Rent with Airbnb</a></li>
+                        <li><a class="dropdown-item" href="#">Service Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Search -->
+        <section class="container search">
+            <div class="row d-flex align-items-center justify-content-around">
+                <div class="col">
+                    <label for="location" class="form-label fw-semibold form-menu menuSearch">Location</label>
+                    <input type="text" class="form-control border-0 form-menu menuSearch" id="location"
+                        placeholder="Where are you going?">
+                </div>
+                <div class="col">
+                    <label for="check-in" class="form-label fw-semibold menuSearch">Check-in</label>
+                    <input type="date" class="form-control border-0 menuSearch" id="check-in">
+                </div>
+                <div class="col">
+                    <label for="Check-out" class="form-label fw-semibold menuSearch">Check-out</label>
+                    <input type="date" class="form-control border-0 menuSearch" id="Check-out">
+                </div>
+                <div class="col">
+                    <label for="guests" class="form-label fw-semibold menuSearch">Guests</label>
+                    <input type="text" class="form-control border-0 menuSearch" id="guests" 
+                        placeholder="Add guests">
+                </div>
+                <button class="btn" id="btnSearch">
+                    <a href="./apartaments.html">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!-- End Section Search -->
+        
+    </header>
+    <!-- End Header -->
+
+    <!-- Section Hero -->
+    <section class="hero">
+        <div class="px-4 py-5">
+            <div class="row d-flex g-5 py-5">
+                <div class="col-lg-6 justify-content-md-start content-hero">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-white" id="text-near">Go Near</h1>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <button type="button" class="btn btn-light btn-sm btn-md d-inline-block" id="btnExplore">Explore nearvy stays</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Hero -->
+
+    <!-- Section Card-->
+    <div class="container content-img">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Genoa</h5>
+                            <p class="card-text"><small class="text-body-secondary time">15 mins drive</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Invernes</h5>
+                            <p class="card-text"><small class="text-body-secondary time">2 hrs flight</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Edinburg</h5>
+                            <p class="card-text"><small class="text-body-secondary time">1.5 hrs flight</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Rapallo</h5>
+                            <p class="card-text"><small class="text-body-secondary time">2 hrs drive</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-lg-5">
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Milan</h5>
+                            <p class="card-text"><small class="text-body-secondary time">1.5 hrs drive</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Montecarlo</h5>
+                            <p class="card-text"><small class="text-body-secondary time">2 hrs drive</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Kirkwall</h5>
+                            <p class="card-text"><small class="text-body-secondary time">1 hr drive</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 image-small">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/80" class="img-fluid rounded-4" alt="Image Location">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Nordkapp</h5>
+                            <p class="card-text"><small class="text-body-secondary time">10 hrs flight</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section Card -->
+
+    <!-- Footer -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-12 col-md">
+                    <h6 class="menuFooter">Support</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Help Centre</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">AirCover</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Anti-discrimination</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Disability support</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Cancellation options</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Report neighbourhood</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <h6 class="menuFooter">Hosting</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Airbnb your home</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">AirCover for Hosts</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Hosting resources</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Community forum</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Hosting responsibly</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Join a free Hosting class</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <h6 class="menuFooter">Airbnb</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Newsroom</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">New features</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Careers</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Investors</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Gift cards</a></li>
+                        <li class="mb-1"><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#">Airbnb.org emergency stays</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-fluid border-top mt-2">
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="col-12 col-md mt-2 p-0">
+                        <small class="d-block mb-3 text-body-secondary">
+                            <span class="menu-footer">&copy; 2024 Airbnb, Inc.</span>
+                            <i class="bi bi-dot"></i><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#"><span class="menuSmall">Privacy</span></a>
+                            <i class="bi bi-dot"></i><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#"><span class="menuSmall">Terms</span></a>
+                            <i class="bi bi-dot"></i><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#"><span class="menuSmall">Sitemap</span></a>
+                            <i class="bi bi-dot"></i><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#"><span class="menuSmall">UK Modern Slavery Act</span></a>
+                            <i class="bi bi-dot"></i><a
+                                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover menuFooter"
+                                href="#"><span class="menuSmall">Company details</span></a>
+                        </small>
+                    </div>
+                    <div class="col-12 col-md mt-2 d-flex justify-content-end">
+                        <span class="menu-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"
+                                role="presentation" focusable="false"
+                                style="display: block; height: 20px; width: 20px; fill: #000;">
+                                <path
+                                    d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                                </path>
+                            </svg>
+                        </span>
+                        <a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                            href="#"><span class="menu-footer" id="lenguage">English (GB)</span></a>
+                        <span class="menu-footer" id="money"><i class="bi bi-currency-pound"></i><a
+                                class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                                href="#">BGP</span></a>
+                        <span class="menu-socials"><i class="bi bi-facebook"></i></span>
+                        <span class="menu-socials"><i class="bi bi-twitter"></i></span>
+                        <span class="menu-socials"><i class="bi bi-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    
+    <!-- Javascript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

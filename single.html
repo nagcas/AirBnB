@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page Description -->
+  <meta name="description" content="BuildWeek 2, AirBnB, Corso Epicode, Web Developer">
+  <!-- Keyword -->
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+  <!-- Author -->
+  <meta name="author" content="Gianluca Chiaravalloti, Mattia Petruzzi, Francesca Montini, Marina Greco">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/favicon/Airbnb_icon-icons.com_66791.png">
+
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Icons Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./CSS/global.css">
+  <link rel="stylesheet" href="./CSS/single.css">
+
+  <title>AirBnB</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="ms-2 me-2 ms-xl-5 me-xl-5">
+    <div class="d-flex flex-nowrap justify-content-between align-items-center">
+      <!-- Logo -->
+      <div>
+        <a href="./index.html" class="text-decoration-none">
+          <img src="./assets/logo-pink.png" id="secondLogo" alt="logo pink AirBnB">
+        </a>
+      </div>
+      <div class="dropdown text-end d-flex justify-content-center align-items-center">
+        <a href="#" class="nav-link px-2" id="text-host">Become a host</a>
+        <div class="m-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+            focusable="false" style="display: block; height: 20px; width: 20px; fill: #000;">
+            <path
+              d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+            </path>
+          </svg>
+        </div>
+        <!-- Menu Dropdown -->
+        <div class="menu">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-person-circle"></i>
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="#">Sign In</a></li>
+            <li><a class="dropdown-item" href="#">Log In</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Gift Card</a></li>
+            <li><a class="dropdown-item" href="#">Rent with Airbnb</a></li>
+            <li><a class="dropdown-item" href="#">Service Center</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Hero -->
+  <div class="container">
+    <p class="fw-bold">Blarmor Home</p>
+    <div class="d-flex justify-content-between">
+      <div>
+        <p><span class="fw-bold">4</span>, 6 ratings • Inverness</p>
+      </div>
+      <div class="icons">
+        <i class="bi bi-cloud-upload"></i><span> Share</span>
+        <i class="bi bi-heart"></i> <span> Save</span>
+      </div>
+    </div>
+
+    <!-- Image Location -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-xl-8">
+          <div class="img-location"></div>
+        </div>
+
+        <!-- Image small Location -->
+        <div class="col-12 col-xl-4 content-img">
+          <div class="row">
+            <div class="col-6 pb-4">
+              <div class="img-airbnb img-airbnb-1"></div>
+            </div>
+            <div class="col-6 pb-4">
+              <div class="img-airbnb img-airbnb-2"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="img-airbnb img-airbnb-3"></div>
+            </div>
+            <div class="col-6">
+              <div class="img-airbnb img-airbnb-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Main -->
+  <section class="container mt-5">
+    <h3>House - Host: Erica</h3>
+    <small>3 rooms • perfect place to visit Loch ness and go looking for Nessie.</small>
+    <p>Show host details</p>
+    <div class="row">
+      <div class="col-12 col-xl-8">
+        <div class="d-flex align-items-center">
+          <div class="icone">
+            <i class="bi bi-house-door"></i>
+          </div>
+          <div class="mt-5">
+            <h5>House</h5>
+            <p class="text-secondary">You will have the whole premise for you.</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="icone">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div class="mt-5">
+            <h5>Advanced Cleaning Methods</h5>
+            <p class="text-secondary">The host is committing to our 5-step cleaning process.</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="icone">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="mt-5">
+            <h5>Invernes</h5>
+            <p class="text-secondary">5 kilmore Rd</p>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="icone">
+            <i class="bi bi-calendar3"></i>
+          </div>
+          <div class="mt-5">
+            <h5>Cancellation Terms And Fees</h5>
+            <p class="text-secondary ">Add your travel dates to know details about cancellation fees and
+              terms.</p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <div class="icone">
+            <i class="bi bi-book"></i>
+          </div>
+          <div class="mt-5">
+            <h5>Rules Of The House</h5>
+            <p class="text-secondary">It's forbidden to host oarties, bring animals and smoke.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Prenotazione -->
+      <div class="col-12 col-xl-4 bordo h-75 formPrenotazioni">
+        <div class="d-flex justify-content-between align-items-baseline">
+          <div class="dates">
+            Add dates to see the prices
+          </div>
+          <div class="reviews">
+            <i class="bi bi-star-fill"></i> 4.0, 6 reviews
+          </div>
+        </div>
+        <form class="p-5">
+          <div class="sezioneForm">
+            <div class="d-flex">
+              <div class="input-group">
+                <input type="date" class="form-control" id="partenza">
+                <input type="date" class="form-control" id="ritorno">
+              </div>
+            </div>
+            <div class=" mb-3">
+              <input type="text" class="form-control focus-ring secondary-focus" id="guest" placeholder="Guest">
+            </div>
+            <button id="btn-cancel" class="w-100 btn btn-lg" type="submit">Cancel Booking</button>
+          </div>
+        </form>
+      </div>
+      <!-- End Form Prenotazioni -->
+    </div>
+  </section>
+  <!-- End Main -->
+
+  <!-- Form Review -->
+  <section class="container">
+    <div class="form-review">
+      <div class="row">
+        <div class="col-12 col-xl-6">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+        </div>
+        <div class="col-12 col-xl-6">
+          <label for="inputRating" class="form-label">Rating</label>
+          <select class="form-select" id="inputRating" aria-label="selectRating">
+            <option value="1" selected>★</option>
+            <option value="2">★★</option>
+            <option value="3">★★★</option>
+            <option value="4">★★★★</option>
+            <option value="5">★★★★★</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="textarea" class="form-label">Review</label>
+          <textarea class="form-control" id="textarea" rows="5"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Form Review -->
+
+  <!-- Section Review -->
+  <section class="container">
+    <div class="review-content">
+      <div class="row d-flex">
+        <div class="col-12 col-xl-6">
+          <div class="card-img d-flex">
+            <div class="me-2">
+              <img id="img-review" src="./assets/propic.png" alt="Image user">
+            </div>
+            <div>
+              <h5 class="card-title">Noemi</h5>
+              <p class="card-text"><small class="text-body-secondary">Jan 2021</small></p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <p>Contrary to other rewiews, I was cold and couldn't figure out how to turn on the hearing...Otherwise
+              amazing house.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-6">
+          <div class="card-img d-flex">
+            <div class="me-2">
+              <img id="img-review" src="./assets/propic.png" alt="Image user">
+            </div>
+            <div>
+              <h5 class="card-title">Enrico</h5>
+              <p class="card-text"><small class="text-body-secondary">Jan 2021</small></p>
+            </div>
+          </div>
+          <div class="mt-5">
+            <p>Amazing place. I've been here with my daughter to take pictures and we were not disappointed!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Review -->
+
+  <!-- Footer -->
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="container">
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-12 col-md">
+          <h6>Support</h6>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Help Centre</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">AirCover</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Anti-discrimination</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Disability support</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Cancellation options</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Report neighbourhood</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h6>Hosting</h6>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Airbnb your home</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">AirCover for Hosts</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Hosting resources</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Community forum</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Hosting responsibly</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Join a free Hosting class</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h6>Airbnb</h6>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Newsroom</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">New features</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Careers</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Investors</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Gift cards</a></li>
+            <li class="mb-1"><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">Airbnb.org emergency stays</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container border-top mt-2">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md mt-2 justify-content-start">
+            <small class="d-block mb-3 text-body-secondary">
+              <span class="menu-footer">&copy; 2024 Airbnb, Inc.</span>
+              <i class="bi bi-dot"></i><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"><span>Privacy</span></a>
+              <i class="bi bi-dot"></i><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"><span>Terms</span></a>
+              <i class="bi bi-dot"></i><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"><span>Sitemap</span></a>
+              <i class="bi bi-dot"></i><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"><span>UK Modern Slavery Act</span></a>
+              <i class="bi bi-dot"></i><a
+                class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#"><span>Company details</span></a>
+            </small>
+          </div>
+          <div class="col-12 col-md mt-2 d-flex justify-content-end">
+            <span class="menu-footer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+                focusable="false" style="display: block; height: 20px; width: 20px; fill: #000;">
+                <path
+                  d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                </path>
+              </svg>
+            </span>
+            <a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+              href="#"><span class="menu-footer">English (GB)</span></a>
+            <span class="menu-footer"><i class="bi bi-currency-pound"></i><a
+                class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="#">BGP</span></a>
+            <span class="menu-socials"><i class="bi bi-facebook"></i></span>
+            <span class="menu-socials"><i class="bi bi-twitter"></i></span>
+            <span class="menu-socials"><i class="bi bi-instagram"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Javascript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+
+  <!-- Javascript -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

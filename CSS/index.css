@@ -1,0 +1,213 @@
+/* 
+    CSS Custom
+    index.html
+
+    BuildWeek n.2
+    Group n. 6
+*/
+
+
+/* Search */
+.search {
+  background-color: #fff;
+  border-radius: 50px;
+  max-width: 850px;
+  max-height: 90px;
+  padding: 5px 35px 5px 35px;
+}
+
+#btnSearch {
+    background-color: rgb(229, 34, 90);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+#btnSearch:hover {
+    box-shadow: 5px 5px 10px 0px #a1a1a1;
+}
+
+.bi-search {
+  color: white;
+}
+/* End Search */
+
+.form-control {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(154, 154, 154);
+  overflow: auto;
+  padding: 4px;
+}
+
+#fotoPrincipale {
+  width: 120px;
+}
+
+/* Section Hero */
+.hero {
+  background-color: #000;
+  height: 100vh;
+  background-image: url("../assets/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-position-y: -140px;
+  background-position-x: 50px;
+}
+
+#text-near {
+  display: inline-block;
+  margin-top: 350px;
+  margin-left: 100px;
+  max-width: 100px;
+  font-size: 110px;
+}
+
+.hero button {
+  margin-left: 100px;
+}
+
+#searchSection {
+  width: 600px;
+}
+
+/* Section Card */
+.content-img {
+  margin-top: 100px;
+}
+
+.image-small img:hover {
+  cursor: pointer;
+  opacity: 0.8;;
+}
+/* End Section card */
+
+/* View Mobile */
+@media (max-width: 450px) {
+
+  /* Search */
+  .search {
+    background-color: #000;
+    padding: 5px 35px 5px 35px;
+    margin-bottom: 180px;
+  }
+
+  .form-label {
+    color: #fff;
+  }
+  
+  #location,
+  #check-in,
+  #Check-out,
+  #guests {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    width: 135px;
+  }
+
+  #btnSearch {
+    margin-top: 20px;
+    width: 120px;
+    border-radius: 15px;
+  }
+  /* end */
+
+  .menu-header ul li a {
+    font-size: 0.8rem;
+  }
+
+  #text-host {
+    font-size: 0.8rem;
+  }
+
+  /* Section Hero */
+  .hero {
+    display: flex;
+    justify-content: start;
+    height: 650px;
+    background-image: url("../assets/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -250px;
+    background-position-y: 120px;
+  }
+
+  #text-near {
+    display: inline-block;
+    margin-top: 220px;
+    margin-left: 40px;
+    max-width: 100px;
+    font-size: 110px;
+  }
+
+  .hero button {
+    margin-left: 40px;
+  }
+
+  /* Section Card */
+  .content-img {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+  .image-small {
+    margin-top: 20px;
+  }
+  /* Section Card */
+
+  footer {
+    text-align: center;
+  }
+}
+
+/* View Tablet  */
+@media (min-width: 451px) and (max-width: 1439px) {
+  
+  /* Search */
+  .search {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: start;
+    height: 650px;
+    background-image: url("../assets/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30px;
+    background-position-x: 80px;
+  }
+
+  #text-near {
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: 50px;
+    max-width: 100px;
+    font-size: 110px;
+  }
+
+  .hero button {
+    margin-left: 50px;
+  }
+
+  /* Section card */
+  .content-img {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .image-small {
+    margin-top: 40px;
+  }
+  /* End Section Card */
+
+  footer {
+    text-align: center;
+  }
+}

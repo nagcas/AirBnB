@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Description -->
+    <meta name="description" content="BuildWeek 2, AirBnB, Corso Epicode, Web Developer">
+    <!-- Keyword -->
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <!-- Author -->
+    <meta name="author" content="Gianluca Chiaravalloti, Mattia Petruzzi, Francesca Montini, Marina Greco">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/Airbnb_icon-icons.com_66791.png">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Icons Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/appartments.css">
+
+    <title>AirBnB</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="container fixed-top bg-white">
+        <div class="d-flex flex-nowrap justify-content-between align-items-center">
+            <!-- Logo -->
+            <div>
+                <a href="./index.html" class="text-decoration-none">
+                    <img src="./assets/logo-pink.png" id="secondLogo" alt="logo pink AirBnB">
+                </a>
+            </div>
+            <div class="dropdown text-end d-flex justify-content-center align-items-center">
+                <a href="#" class="nav-link px-2" id="text-host">Become a host</a>
+                <div class="m-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+                        focusable="false" style="display: block; height: 20px; width: 20px; fill: #000;">
+                        <path
+                            d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                        </path>
+                    </svg>
+                </div>
+                <!-- Menu Dropdown -->
+                <div class="menu">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="bi bi-list"></i>
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">Sign In</a></li>
+                        <li><a class="dropdown-item" href="#">Log In</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Gift Card</a></li>
+                        <li><a class="dropdown-item" href="#">Rent with Airbnb</a></li>
+                        <li><a class="dropdown-item" href="#">Service Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <div class="container main">
+            <h5>10 stays</h5>
+            <div class="section d-flex justify-content-start align-items-center">
+                <h1 class="text-body-emphasis mr-4">Stays in Genova</h1>
+                <div class="selected">
+                    <i class="bi bi-plus-circle-fill"></i>
+                </div>
+            </div>
+            <div class="button-content d-flex justify-content-start">
+                <button class="btn rounded-pill">Available houses</button>
+                <button class="btn rounded-pill">Booked houses</button>
+                <button class="btn rounded-pill">All houses</button>
+            </div>
+            <div class="info">
+                <span>Enter dates and number of guests to see the total price por night.</span>
+            </div>
+
+            <!-- Section Card -->
+            <section class="content-card">
+                <div class="container">
+                    <div class="row d-flex justify-content-center mt-4">
+                        <!-- Card n. 1 -->
+                        <div class="col-12 col-md">
+                            <a href="./single.html">
+                                <div class="card border-0">
+                                    <img src="./assets/2.webp" class="card-img-top" alt="Image hause">
+                                    <div class="card-body">
+                                        <small class="text-body"><i class="bi bi-star-fill"></i><span>1.0
+                                                ratings</span></small>
+                                        <p class="text-body">Apartment • Genova</p>
+                                        <p class="text-body">The windy house</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Card n. 2 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/3.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>1.5 •
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 3 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/4.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>0
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 4 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/5.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>2.75 •
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 5 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/2.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>0
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-2">
+                        <!-- Card n. 6 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/2.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body"><i class="bi bi-star-fill"></i><span>1.0
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 7 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/3.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>1.5 •
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 8 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/4.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>0
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 9 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/5.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>2.75 •
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card n. 10 -->
+                        <div class="col-12 col-md">
+                            <div class="card border-0">
+                                <img src="./assets/2.webp" class="card-img-top" alt="Image hause">
+                                <div class="card-body">
+                                    <small class="text-body-secondary"><i class="bi bi-star-fill"></i><span>0
+                                            ratings</span></small>
+                                    <p class="text-body">Apartment • Genova</p>
+                                    <p class="text-body">The windy house</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-12 col-md">
+                    <h6>Support</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Help Centre</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">AirCover</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Anti-discrimination</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Disability support</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Cancellation options</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Report neighbourhood</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <h6>Hosting</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Airbnb your home</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">AirCover for Hosts</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Hosting resources</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Community forum</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Hosting responsibly</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Join a free Hosting class</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md">
+                    <h6>Airbnb</h6>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Newsroom</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">New features</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Careers</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Investors</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Gift cards</a></li>
+                        <li class="mb-1"><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">Airbnb.org emergency stays</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container border-top mt-2">
+                <div class="row d-flex align-items-center">
+                    <div class="col-12 col-md mt-2 justify-content-start">
+                        <small class="d-block mb-3 text-body-secondary">
+                            <span class="menu-footer">&copy; 2024 Airbnb, Inc.</span>
+                            <i class="bi bi-dot"></i><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span>Privacy</span></a> 
+                            <i class="bi bi-dot"></i><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span>Terms</span></a>
+                            <i class="bi bi-dot"></i><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span>Sitemap</span></a>
+                            <i class="bi bi-dot"></i><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span>UK Modern Slavery Act</span></a>
+                            <i class="bi bi-dot"></i><a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span>Company details</span></a>
+                        </small>
+                    </div>
+                    <div class="col-12 col-md mt-2 d-flex justify-content-end">
+                        <span class="menu-footer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation"
+                            focusable="false" style="display: block; height: 20px; width: 20px; fill: #000;">
+                                <path
+                                    d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                                </path>
+                            </svg>
+                        </span>
+                        <a class="link-secondary link-offset-2 link-offset-1-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#"><span class="menu-footer">English (GB)</span></a>
+                        <span class="menu-footer"><i class="bi bi-currency-pound"></i><a class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">BGP</span></a>
+                        <span class="menu-socials"><i class="bi bi-facebook"></i></span>
+                        <span class="menu-socials"><i class="bi bi-twitter"></i></span>
+                        <span class="menu-socials"><i class="bi bi-instagram"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    
+    <!-- Javascript -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

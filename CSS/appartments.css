@@ -1,0 +1,93 @@
+/* 
+    CSS Custom
+    appartaments.html
+
+    BuildWeek n.2
+    Group n. 6
+*/
+
+
+/* Main */
+.main {
+    margin-top: 90px;    
+}
+/* Section Hero */
+.button-content {
+    margin-top: 20px;
+}
+
+.button-content button {
+    border: 1px solid #69696962;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+
+.button-content button:hover {
+    border: 1px solid #69696962;
+    background-color: #EBEBEB;
+}
+
+.info {
+    margin-top: 20px;
+}
+/* End Section hero */
+
+/* Section Card */
+.card-body small i {
+    color: #FF5A5E;
+    margin-right: 5px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px 0px #A1A1A1;
+}
+
+.content-card a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+  }
+/* End Section Card */
+/* End Main */
+
+
+/* View Tablet and Desktop */
+@media (min-width: 1439px) {
+
+    .button-content {
+        margin-top: 20px;
+    }
+    
+    .button-content button {
+        border: 1px solid #69696962;
+    }
+    
+    .button-content button:hover {
+        border: 1px solid #69696962;
+        background-color: #EBEBEB;
+    }
+
+    .card {
+        transition: 0.3s;
+    }
+    
+    .card:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transform: scale(1.12);
+        box-shadow: 5px 5px 10px 0px #A1A1A1;
+    }
+
+    footer {
+        text-align: start;
+    }
+}
